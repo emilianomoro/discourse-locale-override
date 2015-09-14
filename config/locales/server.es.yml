@@ -1,0 +1,5 @@
+es:
+  embed:
+    start_discussion: "Crear Consulta"
+    continue: "Ver | Crear | Responder consultas"
+    loading: "Cargando Consultas"

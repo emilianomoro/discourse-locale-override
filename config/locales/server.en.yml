@@ -1,0 +1,5 @@
+en:
+  embed:
+    start_discussion: "Create Query"
+    continue: "View | Create | Reply Querys"
+    loading: "Loading Queries"
