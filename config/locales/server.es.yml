@@ -3,3 +3,15 @@ es:
     start_discussion: "Crear Consulta"
     continue: "Ver | Crear | Responder consultas"
     loading: "Cargando Consultas"
+
+  education:
+    'new-reply': |
+      Welcome to %{site_name} &mdash; **thanks for contributing!**
+
+      - Does your reply improve the conversation in some way?
+
+      - Be kind to your fellow community members.
+
+      - Constructive criticism is welcome, but criticize *ideas*, not people.
+
+      For more, [see our community guidelines](/guidelines). This panel will only appear for your first %{education_posts_text}.
