@@ -1,17 +1,89 @@
 es:
+  topics: "Consultas"
   embed:
     start_discussion: "Crear Consulta"
     continue: "Ver | Crear | Responder consultas"
     loading: "Cargando Consultas"
+  archetypes:
+    regular:
+      title: "Tema normal"
+    banner:
+      title: "Tema de Encabezado"
+
+  topic_not_found: "Algo ha salido mal. Tal vez esta consulta fue cerrada o eliminada mientras estabas mirando en él?"
+
 
   education:
-    'new-reply': |
-      Welcome to %{site_name} &mdash; **thanks for contributing!**
 
-      - Does your reply improve the conversation in some way?
+    new-reply: |
+      Bienvenido a %{site_name}
 
-      - Be kind to your fellow community members.
+      - ¿Tu consulta/respuesta es acorde al proyecto?
 
-      - Constructive criticism is welcome, but criticize *ideas*, not people.
+      - Sé amable con los miembros de la comunidad.
 
-      For more, [see our community guidelines](/guidelines). This panel will only appear for your first %{education_posts_text}.
+      Este panel solo aparecerá para tus primeros %{education_posts_text}.
+
+    dominating_topic: |
+      ### Deja a los demás unirse a la conversación
+
+      Esta consulta es muy importante para ti &ndash; has publicado más del %{percent}% de las respuestas aquí.
+
+      ¿Estás seguro de que estás proporcionando el tiempo adecuado para que otras personas puedan ofrecer también sus puntos de vista?
+    too_many_replies: |
+      ### Has alcanzado el límite de respuestas para Esta consulta
+
+      Lo sentimos, pero los nuevos usuarios están limitados temporalmente a %{newuser_max_replies_per_topic} respuestas en el mismo tema.
+
+      En vez de añadir otra respuesta, por favor, considera editar tus respuestas previas o visitar otros temas.
+    reviving_old_topic: |
+      ### ¿Resucitar Esta consulta?
+
+      La última respuesta a esta consulta fue hace %{days} días. Tu post reactivará la consulta subiéndolo a las primeras posiciones de la lista y notificará a aquellos involucrados en la conversación previa.
+
+  staff_category_description: "Categoría privada para debates entre moderadores y administradores. Las consultas solo serán visibles para miembros del staff."
+  assets_topic_body: "Este es un tema permanente, visible únicamente para miembros del staff, con el fin de almacenar las imágenes y archivos utilizados en el diseño del sitio. ¡No lo elimines!\n\n\nCómo hacerlo:\n\n\n1. Responde a esta conulta.\n2. Sube todas las imágenes que desees para los logos, favicons y demás aquí. (Usa el icono de la barra de herramientas en el editor o arrastra y suelta las imágenes o pégalas). \n3. Publica tu respuesta.\n4. Haz clic con el botón derecho en las imágenes de tu nuevo post para obtener la ruta donde están subidas, o haz clic en el icono de editar para ver estas rutas en el panel de edición. Copia las rutas.\n5. Pega las rutas a las imágenes en [ajustes básicos](/admin/site_settings/category/required).\n\n\nSi necesitas habilitar la subida de diferentes tipos de archivo, edita `authorized_extensions` en las opciones de [archivos](/admin/site_settings/category/files)."
+
+
+  user_notifications:
+    user_posted:
+      subject_template: "[%{site_name}] %{subject_prefix}%{username} publicó en '%{topic_title}'"
+      text_body_template: |
+        %{username} publicó en '%{topic_title}' en %{site_name}:
+
+        ---
+        %{message}
+
+        ---
+        Por favor visita este enlace para contestar: %{base_url}%{url}
+    user_replied:
+      subject_template: "[%{site_name}] %{topic_title}"
+      text_body_template: "<table width=\"600\" height=\"558\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\"><tr><td height=\"558\" valign=\"top\"><table width=\"600\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td height=\"148\" valign=\"top\"><img src=\"http://static01.yeswead.com/images/encabezado.gif\" width=\"600\" height=\"170\" /></td></tr></table><br /><table width=\"600\" height=\"352\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" ><tr><td width=\"18\" height=\"352\">&nbsp;</td><td width=\"568\" valign=\"top\"><p style= \"font-family: Arial, Helvetica, sans-serif; font-size:13px;\">\
+        \ %{message}
+        \ %{context}
+        \ </p></td><td width=\"14\">&nbsp;</td></tr></table><table width=\"600\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td height=\"10\" valign=\"top\"><img src=\"http://static01.yeswead.com/images/pie.gif\" width=\"600\" height=\"10\" /></td></tr></table></td></tr></table>\n\
+        \ ---
+        \ %{respond_instructions} \n"
+    user_quoted:
+      subject_template: "[%{site_name}] %{topic_title}"
+      text_body_template: |
+        %{message}
+
+        %{context}
+
+        ---
+        %{respond_instructions}
+    user_mentioned:
+      subject_template: "[%{site_name}] %{topic_title}"
+      text_body_template: |
+        %{message}
+
+        %{context}
+
+        ---
+        %{respond_instructions}
+
+  unsubscribe_link: |
+    Para dar de baja tu suscripción a estos emails, visita tus [preferencias](%{user_preferences_url}).
+
+    Para dejar de recibir notificaciones sobre Esta consulta en particular, [haz clic aquí](%{unsubscribe_url}).
