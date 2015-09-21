@@ -1,0 +1,64 @@
+es:
+  js:
+    choose_topic:
+      none_found: "Ningún proyecto encontrado."
+
+    directory:
+      topics_entered_long: "Proyectos vistos"
+      topic_count: "Proyectos"
+      topic_count_long: "Proyectos creados"
+      post_count: "Respuestas"
+      post_count_long: "Consultas escritos"
+      posts_read_long: "Consultas leídas"
+
+    groups:
+      posts: "Consultas"
+
+    categories:
+      posts: "Consultas"
+      topics: "Proyectos"
+      topic_stats: "El número de proyectos nuevos."
+
+    ip_lookup:
+      last_posted: "Última consulta"
+
+    notifications:
+        reasons:
+          '3_6': 'Recibirás notificaciones porque estás vigilando esta categoría.'
+          '3_5': 'Recibirás notificaciones porque has empezado a vigilar este proyecto automáticamente.'
+          '3_2': 'Recibirás notificaciones porque estás vigilando este proyecto.'
+          '3_1': 'Recibirás notificaciones porque creaste este proyecto.'
+          '3': 'Recibirás notificaciones porque estás vigilando este proyecto.'
+          '2_8': 'Recibirás notificaciones porque estás siguiendo esta categoría.'
+          '2_4': 'Recibirás notificaciones porque has publicado una respuesta en este proyecto.'
+          '2_2': 'Recibirás notificaciones porque estás siguiendo este proyecto.'
+          '2': 'Recibirás notificaciones porque <a href="/users/{{username}}/preferences">has leído este proyecto</a>.'
+          '1_2': 'Se te notificará solo si alguien menciona tu @nombre o te responde a una consulta.'
+          '1': 'Se te notificará si alguien menciona tu @nombre o te responde a una consulta.'
+          '0_7': 'Estás ignorando todas las notificaciones en esta categoría.'
+          '0_2': 'Estás ignorando todas las notificaciones en este proyecto.'
+          '0': 'Estás ignorando todas las notificaciones en este proyecto.'
+        watching_pm:
+          title: "Vigilar"
+          description: "Se te notificará de cada nueva consulta en este mensaje y se mostrará un contador de nuevas consultas."
+        watching:
+          title: "Vigilar"
+          description: "Se te notificará de cada post en esta consulta y se mostrará un contador de nuevas consultas."
+        tracking_pm:
+          title: "Seguir"
+          description: "Se mostrará un contador de nuevas consultas para este mensaje y se te notificará si alguien menciona tu @nombre o te responde a una consultas."
+        tracking:
+          title: "Seguir"
+          description: "Se mostrará un contador de nuevas consultas en este proyecto y se te notificará si alguien menciona tu @nombre o te responde a una consultas."
+        regular:
+          title: "Normal"
+          description: "Se te notificará solo si alguien menciona tu @nombre o te responde a una consulta."
+        regular_pm:
+          title: "Normal"
+          description: "Se te notificará solo si alguien menciona tu @nombre o te responde a una consulta."
+        muted_pm:
+          title: "Silenciar"
+          description: "Nunca se te notificará nada sobre este hilo de mensajes."
+        muted:
+          title: "Silenciar"
+          description: "Nunca recibirás notificaciones sobre este proyecto y no aparecerá en tu pestaña de no leídos."
